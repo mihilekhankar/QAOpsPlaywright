@@ -1,0 +1,26 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "test": "npx playwright test tests/WebAPIPart1.spec.js --headed",
+    "webTests": "npx playwright test --grep @Web",
+    "APITests": "npx playwright test --grep @API"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@azure/identity": "^4.13.3",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-playwright": "^3.11.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "exceljs": "^4.4.0"
+  }
+}
